@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>University Rankings Visualization</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v0.min.js"></script>
+</head>
+<body>
+    <t1>University 2023 Global Ranking Visualization</t1>
+    <div class=title>
+        <p> This project aims to provide a visualization of informations about universities in a worldwide scale based on data aired in 2023. You can therefore explore opportunities for higher education looking at factors like international exposure, faculty support, and gender representation</a>.
+        <br>Click on a region to display its top 20 Universities. From there, you are provided comparison plots of 3 features you can choose in the selection menu. Click on a displayed university name to take a look at its collected data.</p>
+      </div>
+    <div id="map-container"></div>
+    <div id="visualization-container">
+        <div id="bar-plot-options">
+            <label for="plot-option-select">Select data to display:</label>
+            <select id="plot-option-select">
+                <option value="Number of students">Number of Students</option>
+                <option value="Percentage of international students">Percentage of International Students</option>
+                <option value="Female students ratio">Female Ratio</option>
+            </select>
+        </div>
+        <div id="bar-plot-container"></div>
+    </div>
+    <div id="info-container"></div>
+    <script src="index.js"></script>
+</body>
+</html>
