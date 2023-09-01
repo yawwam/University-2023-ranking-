@@ -1,7 +1,7 @@
 # University 2023 ranking visualization
 
 ## Description
-This web application allows users to explore and compare universities around the world. It provides an interactive world map where users can click on regions to view the top 20 universities in that region. Users can also select different criteria to generate bar plots for comparison.
+This web application allows users to explore and compare universities around the world. It provides an interactive world map where users can click on regions to view its top 20 universities. Users can also select different criteria to generate bar plots for comparison.
 
 ## Features
 - Interactive world map for exploring top ranking universities by region.
