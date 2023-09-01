@@ -1,14 +1,14 @@
 # University 2023 ranking visualization
 
 ## Description
-This web application allows users to explore and compare universities around the world. It provides an interactive world map where users can click on regions to view its top 20 universities. Users can also select different criteria to generate bar plots for comparison.
+This web application allows users to explore and compare universities around the world. It provides an interactive world map where users can click on regions to view its top 20 universities. Users can also select different criterias to generate bar plots for comparison.
 
 ## Features
 - Interactive world map for exploring top ranking universities by region.
 
 ![Dashboard view](/img/figure1.png)
 
-- Detailed information about universities, including world rank, student count, gender ratio, and more.
+- Detailed information about universities including world rank, student count, gender ratio, and more.
 
 - Comparison of universities based on criteria such as the number of students, international students, and gender ratio with a dropdown menu for selecting comparison criteria
 
@@ -25,7 +25,7 @@ This web application allows users to explore and compare universities around the
 ## Data
 This web visualization is based on the Global University Rankings Dataset 2023 from kaggle (https://www.kaggle.com/datasets/joyshil0599/global-university-rankings-dataset-2023). 
 
-The dataset was merged with the country to continent dataset from kaggle (https://www.kaggle.com/datasets/statchaitya/country-to-continent?resource=download) in the preprocessing.ipynb notebook to obtain the region of each university.
+The dataset was merged ussing the fuzzywuzzy library with the country to continent dataset from kaggle (https://www.kaggle.com/datasets/statchaitya/country-to-continent?resource=download) in the preprocessing.ipynb notebook to obtain the region of each university.
 
 The covered regions in our visualization are namely :   
 ['Northern Europe', 'Northern America', 'Western Europe',
@@ -36,17 +36,17 @@ The covered regions in our visualization are namely :
        'Central America', 'Central Asia', 'Melanesia'].
 
 **Features of interest :**    
-- Rank: The ranking position of the university in the global rankings.
+- Rank: The ranking position of the university in the 2023 global rankings.
 
 - Location: The country of the university.
 
-- Number of Students: The total number of students enrolled in the university.
+- Number of students: The total number of students enrolled in the university.
 
-- Number of Students per Staff: The ratio of the total number of students to the total number of academic staff members, providing an indication of the student-to-faculty ratio.
+- Number of students per staff: The ratio of the total number of students to the total number of academic staff members, providing an indication of the student-to-faculty ratio.
 
-- International Student: The percentage of international students studying at the university.
+- International students: The percentage of international students studying at the university.
 
-- Female : Male Ratio: The gender distribution among the university's student body, presenting the ratio of female students to male students.
+- Gender Ratio: The gender distribution among the university's student body, presenting the ratio of female students to male students.
 
 
 ## Running the project 
@@ -56,6 +56,7 @@ This project can be run locally. To do so, follow these steps:
 - Initiate a server with python by entering:
 `python -m http.server`
 - Open a browser and enter the localhost adress displayed in the command prompt.
+The world_university_rank json data file can be generated using the preprocessing notebook but it is already included in the repository.
 
 ## Author and context
 Myriam for "Visualisation de données" course, conducted by Professor Isaac Pante (University of Lausanne,Spring 2023).
