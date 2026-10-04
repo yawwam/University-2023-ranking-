@@ -59,7 +59,7 @@ This project can be run locally. To do so, follow these steps:
 The world_university_rank json data file can be generated using the preprocessing notebook but it is already included in the repository.
 
 ## Author and context
-Myriam for "Visualisation de données" course, conducted by Professor Isaac Pante (University of Lausanne,Spring 2023).
+Mohamed Yassine Aouame - Personal project
 
 ## Credits
 - This project inspired the work on the display idea of the world map :     
